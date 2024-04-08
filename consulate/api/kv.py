@@ -171,6 +171,7 @@ class KV(base.Endpoint):
             results = response
         else:
             results = {}
+            response_json = json.loads(response)
             for row in response:
                 results[row['Key']] = row['Value']
         return results
