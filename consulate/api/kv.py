@@ -4,6 +4,7 @@ Consul KV Endpoint Access
 """
 from consulate.api import base
 from consulate import utils, exceptions
+import json
 
 
 class KV(base.Endpoint):
