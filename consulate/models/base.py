@@ -3,7 +3,7 @@
 Base Model
 
 """
-import collections
+import collections.abc as collections
 
 
 class Model(collections.Iterable):
